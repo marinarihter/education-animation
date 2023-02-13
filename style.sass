@@ -1,0 +1,156 @@
+$main-color: #0536FC
+
+body
+    font-family: 'Basis Grotesque Pro', 'Raleway', sans-serif
+    font-size: 16px
+    color: black
+    line-height: 1.5
+    letter-spacing: -0.03em
+
+.container
+    max-width: 1440px
+
+.regular-text
+    opacity: 0.6
+
+.minor-text
+    opacity: 0.35
+
+.header
+    padding: 24px 0 25px 50px
+
+.header-item
+    display: inline-block
+
+.logo-area
+    margin-right: 90px
+    position: relative
+
+.logo-area__logo
+    position: absolute
+    top: 3px
+
+.logo-area__text
+    margin: 0 0 0 50px
+
+.menu-area
+    margin-right: 234px
+
+.nav-item--bg-margin
+    margin-right: 63px
+
+.section
+    margin: 100px 0
+
+.program-header
+    padding-left: 210px
+    padding-bottom: 100px
+
+.section-header__tag
+    color: $main-color
+    margin-bottom: 30px
+    font-weight: 700
+    text-transform: uppercase
+
+.section-header__title
+    line-height: 1.1
+    font-weight: 700
+    text-transform: uppercase
+    padding-bottom: 1.8em
+
+.main-title
+    font-size: 3.7em
+
+.nav-item
+    &:hover
+        background: $main-color
+    &:active
+        background: $main-color
+
+.transition
+    transition: background 400ms ease-in, color 400ms ease-in
+
+.nav-link
+    &:hover
+        color: white
+
+.menu-item
+    &:hover
+        background: white
+    &::active
+        background: white
+    &__link
+        color: black
+        &:after
+            content: url(image/dropdown.svg)
+            display: inline-block            
+            position: relative
+            top: -2px
+            left: 10px         
+        &:hover
+            color: $main-color
+            &:after
+                content: url(image/dropdown.svg)
+                display: inline-block
+                transform: rotate(90deg)
+        &:active
+            color: $main-color
+
+.btn-dropdown
+    color: $main-color
+    &::after
+        content: url(image/dropdown.svg)
+        color: $main-color
+        padding-left: 10px
+    &:visited
+        color: $main-color
+    
+.header-arrow
+    margin: auto 34px 0 auto
+    float: right
+    animation: bounce 1s ease infinite
+
+@keyframes bounce
+    0%
+    50%
+        transform: translateY(-7px)
+
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
