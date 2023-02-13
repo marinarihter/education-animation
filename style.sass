@@ -73,7 +73,11 @@ body
 .nav-link
     &:hover
         color: white
-
+    &:visited
+        color: inherit
+        &:hover
+            color: white
+        
 .menu-item
     &:hover
         background: white
@@ -95,6 +99,13 @@ body
                 transform: rotate(90deg)
         &:active
             color: $main-color
+        &:visited
+            color: inherit
+            &:hover
+                color: $main-color
+
+.nav-active
+    color: $main-color
 
 .btn-dropdown
     color: $main-color

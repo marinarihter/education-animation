@@ -1,3 +1,29 @@
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  src: url(../fonts/BasisGrotesquePro-Regular.woff2) format('woff2'),
+       url(../fonts/BasisGrotesquePro-Regular.woff) format('woff'),
+       url(../fonts/BasisGrotesquePro-Regular.otf) format('opentype');
+       font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  src: url(../fonts/BasisGrotesquePro-Bold.woff2) format('woff2'),
+       url(../fonts/BasisGrotesquePro-Bold.woff) format('woff'),
+       url(../fonts/BasisGrotesquePro-Bold.eot) format('opentype');
+       font-weight: 700;
+       font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  src: url(../fonts/BasisGrotesquePro-Light.woff2) format('woff2'),
+       url(../fonts/BasisGrotesquePro-Light.woff) format('woff'),
+       url(../fonts/BasisGrotesquePro-Light.eot) format('opentype');
+       font-weight: 300;
+       font-display: fallback;
+}
+
 body {
   font-family: "Basis Grotesque Pro", "Raleway", sans-serif;
   font-size: 16px;
@@ -89,6 +115,12 @@ body {
 .nav-link:hover {
   color: white;
 }
+.nav-link:visited {
+  color: inherit;
+}
+.nav-link:visited:hover {
+  color: white;
+}
 
 .menu-item:hover {
   background: white;
@@ -115,6 +147,16 @@ body {
   transform: rotate(90deg);
 }
 .menu-item__link:active {
+  color: #0536FC;
+}
+.menu-item__link:visited {
+  color: inherit;
+}
+.menu-item__link:visited:hover {
+  color: #0536FC;
+}
+
+.nav-active {
   color: #0536FC;
 }
 
